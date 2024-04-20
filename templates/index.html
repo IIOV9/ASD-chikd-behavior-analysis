@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>عقلية التوحد</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/HOME.png') }}" rel="icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <style>
+    body, h1, h2, h3, h4, h5, h6, p, span, button, input {
+      font-family: 'Cairo', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo"><a href="/"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+     <a href="/" class="logo me-auto"><img src="/static/img/HOME.png" alt=""></a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">الصفحة الرئيسية</a></li>
+          <li><a class="nav-link scrollto" href="#about">نبذة عنا</a></li>
+          <li><a class="nav-link scrollto" href="#team">الفريق</a></li>
+          <li class="dropdown"><a href="#"><span>خدماتنا</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/community"><span>المجتمع</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="/story2">قصص ملهمة</a></li>
+                  <li><a href="/scientific_articles">مقالات علمية</a></li>
+            </li>
+                </ul>
+            </li>
+            <li><a class="nav-link scrollto active" href="/MindBot">Mind Bot</a></li>
+            </ul>
+          <li><a class="nav-link scrollto" href="#contact">المراكز المختصة</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(static/img/slide/slide-11.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">التوحد ليس إعاقة</h2>              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(static/img/slide/slide-22.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">التوحد هو جزء من الطيف الذي يحمل مواهب وقدرات فريدة</h2>              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(static/img/slide/slide-33.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"> التوحد يعني تنوعاً وإضافة قيمة للمجتمع</h2>              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>نبذة عنا</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            
+          </div>
+                    
+        
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+            <span class="w3-text-light-green">الشغف</span>
+            <p>الرغبة في تقديم كل الدعم الممكن لجميع الأمهات اللاتي يواجهن صعوبة في تربية طفل طيف التوحد</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <i class="fa fa-cog  w3-margin-bottom w3-jumbo"></i>
+            <span class="w3-text-light-green">الدعم</span>
+            <p>الرغبة في دعم أنفسنا كفريق في تطوير قدراتنا في البرمجة والتكنولوجيا لنكون ذوي قيمة عالية في المجتمع</p>
+          </div>
+
+    </section><!-- End Why Us Section -->
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>مراكز وجميعات رعاية التوحد</h2>
+          
+        </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+<div class="swiper-slide">
+  <a href="https://acesaudi.org/">
+    <img src="static/img/clients/client-11.png" class="img-fluid" alt="">
+  </a>
+</div>            
+<div class="swiper-slide">
+  <a href="https://saautism.org.sa/1/">
+    <img src="static/img/clients/client-22.png" class="img-fluid" alt="">
+  </a>
+</div>            
+
+  <div class="swiper-slide">
+    <a href="https://www.alamalc.org.sa/">
+      <img src="static/img/clients/client-33.png" class="img-fluid" alt="">
+    </a>
+  </div>            
+
+
+  <div class="swiper-slide">
+    <a href="https://saf.org.sa/en">
+      <img src="static/img/clients/client-44.png" class="img-fluid" alt="">
+    </a>
+  </div>  
+  <div class="swiper-slide">
+    <a href="https://amanautism.org.sa/">
+      <img src="static/img/clients/client-55.png" class="img-fluid" alt="">
+    </a>
+  </div>             
+  <div class="swiper-slide">
+    <a href="https://www.adda.org.sa//">
+      <img src="static/img/clients/client-66.png" class="img-fluid" alt="">
+    </a>
+  </div>            
+  <div class="swiper-slide">
+    <a href="https://afac.org.sa/">
+      <img src="static/img/clients/client-77.png" class="img-fluid" alt="">
+    </a>
+  </div>               
+  <div class="swiper-slide">
+    <a href="https://shamah-autism.com.sa/">
+      <img src="static/img/clients/client-88.png" class="img-fluid" alt="">
+    </a>
+  </div>           
+</div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+</section><!-- End Our Clients Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>فريقنا</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/team-11.jpg" alt="">
+              <h4>لمى راشد</h4>
+              <span>Team leader & Web designer & programmer</span>
+              <p>
+              عضوة قيمة في فريقنا وقائدة. المسؤولة عن الجانب البرمجي, قامت بالإشراف على جميع المراحل و أولت اهتمامًا خاصًا لتصميم موقعنا
+              </p>
+              <div class="social">
+                <a href="https://sa.linkedin.com/in/lama-rashed-a77a72263"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/team-22.jpg" alt="">
+              <h4>ندى محمد</h4>
+              <span>Web developer & programmer</span>
+              <p>
+               عضوة قيمة في فريقنا قامت بالإشراف على مرحلة البرمجة المتعلقة بالذكاء الإصطناعي وتصميم موقعنا وقدمت الدعم اللازم لتحقيق أهداف هذا المشروع 
+              </p>
+              <div class="social">               
+                <a href="https://www.linkedin.com/in/nada-al-ghanim-208302229?"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/team-33.jpg" alt="">
+              <h4>شهد أحمد</h4>
+              <span>Data analyst</span>
+              <p>
+              عضوة قيمة في فريقنا قامت بالإشراف على مرحلة جمع البيانات والمعلومات التي تساعد في صميم وتطوير المشروع
+              </p>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/%D8%B4%D9%87%D8%AF-%D8%B9%D8%B3%D9%8A%D8%B1%D9%8A-0488892ba?"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/team-44.jpg" alt="">
+              <h4>مريم عبدالله</h4>
+              <span>Data analyst & web designer</span>
+              <p>
+               عضوة قيمة في فريقنا قامت بتقديم دراسات مهمة وتحويلها إلى معلومات مفيدة, بجانب التصميم الإبداعي في موقعنا
+              </p>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/maryam-falgi-25b5a5263?"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/team-55.jpg" alt="">
+              <h4>فاطمه محمد</h4>
+              <span>QA analysts</span>
+              <p>
+          عضوة قيمة في فريقنا كانت ملتزمة بضمان إصلاح أي مشاكل تم العثور عليها في وثائق المشروع
+              </p>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/fatemah-elmay-8683752bb"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/team-55.jpg" alt="">
+              <h4>فاطمه حسن</h4>
+              <span>Documentarian</span>
+              <p>
+عضوة قيمة في فريقنا كانت تضمن أن تكون معلومات المشروع موثقة بشكل جيد, منظمة, ومتاحة للأطراف المعنية
+              </p>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/fatima-hassan-52a8892ba"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>مراكز التوحد في المملكة العربية السعودية</h2>
+        </div>
+
+        <div class="row">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7648514.197101315!2d39.47886521264126!3d20.603322585983392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2YXYsdin2YPYsiDYp9mE2KrZiNit2K8g2KzZhdmK2Lkg2YXZhtin2LfZgiDYp9mE2YXZhdmE2YPYqSDYp9mE2LnYsdio2YrYqSDYp9mE2LPYudmI2K_Zitip!5e0!3m2!1sen!2ssa!4v1710611366884!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://twitter.com/asdkku_2024?s=11" class="twitter"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>the Autistic Mindset group</span></strong>. 
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+   <!-- Vendor JS Files -->
+   <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+   <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+ 
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>

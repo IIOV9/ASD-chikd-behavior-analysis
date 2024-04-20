@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>قصص ملهمة</title>
+<meta charset="UTF-8">
+<!-- Favicons -->
+<link href="{{ url_for('static', filename='img/HOME.png') }}" rel="icon">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<!-- Vendor CSS Files -->
+<link href="{{ url_for('static', filename='vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<!-- Template Main CSS File -->
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+<style>
+  body, h1, h2, h3, h4, h5, h6, p, span, button, input {
+    font-family: 'Cairo', sans-serif;
+  }
+</style>
+</head>
+
+<body>
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-flex align-items-center">
+  <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="contact-info d-flex align-items-center">
+    </div>
+  </div>
+</section>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center">
+    <h1 class="logo"><a href="/"></a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+   <a href="/" class="logo me-auto"><img src="/static/img/HOME.png" alt=""></a>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="/">الصفحة الرئيسية</a></li>
+        <li><a class="nav-link scrollto" href="#about">نبذة عنا</a></li>
+        <li><a class="nav-link scrollto" href="#team">الفريق</a></li>
+        <li class="dropdown"><a href="#"><span>خدماتنا</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown"><a href="/community"><span>المجتمع</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="/story2">قصص ملهمة</a></li>
+                <li><a href="/scientific_articles">مقالات علمية</a></li>
+          </li>
+              </ul>
+          </li>
+          <li><a class="nav-link scrollto active" href="/MindBot">Mind Bot</a></li>
+          </ul>
+        <li><a class="nav-link scrollto" href="#contact">المراكز المختصة</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  </div>
+</header><!-- End Header -->
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    
+    <h4><b>قصص</b></h4>
+    
+  </div>
+  <div class="w3-bar-block">
+    <a href="#STORY" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>قصص</a> 
+
+  </div>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>قصص أطفال التوحد وأسرهم</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">أختر</span> 
+      <button class="w3-button w3-black">الكل</button>
+      
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/static/img/story/logo-small-360x180.webp" alt="s1" style="width:100%" class="w3-hover-opacity">
+     
+      <div class="w3-container w3-white">
+        
+        <p><b>قصة فاطمة والتوحد</b></p>
+        <a href="https://ummahat.net/%D9%82%D8%B5%D8%A9-%D9%81%D8%A7%D8%B7%D9%85%D8%A9-%D9%81%D9%8A-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%AA%D9%88%D8%AD%D8%AF/"</a>
+       <p>“إلى كل أمٍ لديها طفل ملاك توحدي، أنتم القوة وهم من تستمدون منهم القوة. أحبوهم واغمروهم بعاطفتكم فهم المدخل إلى السعادة في الدنيا وإلى الجنة في الآخرة.”
+
+       </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/static/img/story/تو2.png" alt="تو2" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>من عالم التوحد إلى "نجم" على "السوشيال ميديا"</b></p>
+        <a href="https://www.alhurra.com/lebanon/2022/12/16/%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%AA%D9%88%D8%AD%D8%AF-%D9%86%D8%AC%D9%85-%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84-%D9%85%D9%8A%D8%AF%D9%8A%D8%A7-%D9%82%D8%B5%D8%A9-%D9%86%D8%AC%D8%A7%D8%AD-%D8%B4%D8%A7%D8%A8-%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A"</a>
+        <p>رحلة طويلة معبّدة بالأشواك والزهور، قطعتها فاتن مرعشلي مع ابنها محمود حجازي المصاب باضطرابات طيف التوحد</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/static/img/story/st3.jpg" alt="st3" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>قصتي أهديها إلى كل الأمهات الخارقات  </b></p>
+        <a href="https://www.360moms.net/ar/articles/%D8%AA%D8%AC%D8%B1%D8%A8%D8%AA%D9%8A/%D9%82%D8%B5%D8%B5-%D8%A3%D9%85%D9%87%D8%A7%D8%AA/803-%D9%82%D8%B5%D8%AA%D9%8A-%D8%A3%D9%87%D8%AF%D9%8A%D9%87%D8%A7-%D8%A5%D9%84%D9%89-%D9%83%D9%84-%D8%A7%D9%84%D8%A3%D9%85%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D9%82%D8%A7%D8%AA"</a>
+        <p>"كم عمر ابنك؟ لماذا لم يتكلم حتى الآن؟ ما خطبه؟ لماذا يتناول طعامه مهروساً؟ لماذا... لماذا... لماذا؟"</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/static/img/story/st4.jpg" alt="st4" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>تجربتي في علاج ابني من التوحد | ساعدي طفلك الان</b></p>
+        <a href="https://www.tl3somy.com/2022/10/My-experience-in-treating-my-son-with-autism.html"</a>
+        <p>في بداية تجربتي في علاج ابني من التوحد لم أكن أدري أن ابني يعاني من مشكلة أو اضطراب، إذا كانت هذه هي تجربتي الأولى في الأمومة ولم أكن أعلم الكثير عن التوحد ومدى انتشاره.. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/static/img/story/st5.jpg" alt="st5" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>تجربتي في علاج ابني من التوحد </b></p>
+        <a href="https://www.eqrae.com/%D8%AA%D8%AC%D8%B1%D8%A8%D8%AA%D9%8A-%D9%81%D9%8A-%D8%B9%D9%84%D8%A7%D8%AC-%D8%A7%D8%A8%D9%86%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%AA%D9%88%D8%AD%D8%AF/"</a>
+        <p>ذهبنا به للشيخ وقرأ عليه بكى قليلا ثم سكت وبعدها بشهر لاحظوا عليه الجميع التحسن والحمد لله كلما كبر كلما تحسن بفضل الله وحده .</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/static/img/story/st6.jpg" alt="st6" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>في اليوم العالمي للتوحد.. زينب العتوم تروي قصة طفلها</b></p>
+    <a href="https://kulalusra.ae/ar/better-life/health-and-fitness/2023/04/03/4637601"></a>
+        <p>استكملت رحلتها في البحث عن أسباب التوحد وعوالمه والبحث أيضاً عما يخفف من حالة ابنها بعد أن شقت طريقها نحو المعرفة والتعلم وتوعية غيرها</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>

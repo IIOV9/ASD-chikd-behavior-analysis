@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MindBot</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/HOME.png') }}" rel="icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="/static/css/css.css">
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <style>
+      body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    button,
+    input {
+      font-family: 'Cairo', sans-serif;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo"><a href="/"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+     <a href="/" class="logo me-auto"><img src="/static/img/HOME.png" alt=""></a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">الصفحة الرئيسية</a></li>
+          <li><a class="nav-link scrollto" href="/#about">نبذة عنا</a></li>
+          <li><a class="nav-link scrollto" href="/#team">الفريق</a></li>
+          <li class="dropdown"><a href="#"><span>خدماتنا</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/community"><span>المجتمع</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="/story2">قصص ملهمة</a></li>
+                  <li><a href="/Scientific Articles">مقالات علمية</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto active" href="/MindBot">Mind Bot</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="/#contact">المراكز المختصة</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  <div class="container w3-padding">
+    <div class="chat-header">
+      <div class="welcome-message ">مرحبًا! أنا هنا لمساعدتك</div>
+    </div>
+    <div class="chat-container">
+      <button id="refreshPageBtn" class="w3-button w3-teal w3-margin"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+      <div class="row">
+        <div class="col-md-10 ml-auto mr-auto">
+          <form id="diagnosis-form">
+            <div id="chatbox">
+              
+              <div class="instruction">الرجاء الإجابة على جميع الأسئلة للحصول على التحليل المطلوب</div>
+
+
+                            <!-- Question 1 -->
+                            <div class="text-left">
+                                <p class="botText">هل ينظر الطفل إليك عندما تنادين اسمه/ها؟</p>
+                                <div>
+                                    <input type="radio" id="question1_yes" name="question1" value="yes">
+                                    <label for="question1_yes">نعم</label>
+                                    <input type="radio" id="question1_no" name="question1" value="no">
+                                    <label for="question1_no">لا</label>
+                                </div>
+                            </div>
+                            <!-- Question 2 -->
+                            <div class="text-left">
+                                <p class="botText">هل من السهل التواصل بصرياً مع طفلك؟</p>
+                                <div>
+                                    <input type="radio" id="question2_yes" name="question2" value="yes">
+                                    <label for="question2_yes">نعم</label>
+                                    <input type="radio" id="question2_no" name="question2" value="no">
+                                    <label for="question2_no">لا</label>
+                                </div>
+                            </div>
+                            <!-- Question 3 -->
+                            <div class="text-left">
+                                <p class="botText">هل يشير طفلك إلى شيء ما عندما يرغب في الحصول عليه؟ مثل لعبة بعيدة عنه مثلاً؟</p>
+                                <div>
+                                    <input type="radio" id="question3_yes" name="question3" value="yes">
+                                    <label for="question3_yes">نعم</label>
+                                    <input type="radio" id="question3_no" name="question3" value="no">
+                                    <label for="question3_no">لا</label>
+                                </div>
+                            </div>
+                            <!-- Question 4 -->
+                            <div class="text-left">
+                                <p class="botText">هل يشير طفلك إلى رغبته في مشاركة اهتماماته معك؟ مثل الإشارة إلى منظر مشوق؟</p>
+                                <div>
+                                    <input type="radio" id="question4_yes" name="question4" value="yes">
+                                    <label for="question4_yes">نعم</label>
+                                    <input type="radio" id="question4_no" name="question4" value="no">
+                                    <label for="question4_no">لا</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 5 -->
+                            <div class="text-left">
+                                <p class="botText">هل يتظاهر طفلك بفعل ما؟ مثل التحدث باستخدام لعبة جوال؟</p>
+                                <div>
+                                    <input type="radio" id="question5_yes" name="question5" value="yes">
+                                    <label for="question5_yes">نعم</label>
+                                    <input type="radio" id="question5_no" name="question5" value="no">
+                                    <label for="question5_no">لا</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 6 -->
+                            <div class="text-left">
+                                <p class="botText">هل يتابع طفلك ما تشاهدين؟</p>
+                                <div>
+                                    <input type="radio" id="question6_yes" name="question6" value="yes">
+                                    <label for="question6_yes">نعم</label>
+                                    <input type="radio" id="question6_no" name="question6" value="no">
+                                    <label for="question6_no">لا</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 7 -->
+                            <div class="text-left">
+                                <p class="botText">عندما يشعر أحد أفراد العائلة بالاستياء، هل يحاول طفلك مواساته؟</p>
+                                <div>
+                                    <input type="radio" id="question7_yes" name="question7" value="yes">
+                                    <label for="question7_yes">نعم</label>
+                                    <input type="radio" id="question7_no" name="question7" value="no">
+                                    <label for="question7_no">لا</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 8 -->
+                            <div class="text-left">
+                                <p class="botText">هل يستخدم طفلك إيماءات بسيطة مثل التلويح بيديه للوداع؟</p>
+                                <div>
+                                    <input type="radio" id="question8_yes" name="question8" value="yes">
+                                    <label for="question8_yes">نعم</label>
+                                    <input type="radio" id="question8_no" name="question8" value="no">
+                                    <label for="question8_no">لا</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 9 -->
+                            <div class="text-left">
+                                <p class="botText">هل يحدق طفلك في أي شيء دون أي غرض واضح؟</p>
+                                <div>
+                                    <input type="radio" id="question9_yes" name="question9" value="yes">
+                                    <label for="question9_yes">نعم</label>
+                                    <input type="radio" id="question9_no" name="question9" value="no">
+                                    <label for="question9_no">لا</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 10 -->
+                            <div class="text-left">
+                                <p class="botText">هل هناك صعوبة في التركيز؟</p>
+                                <div>
+                                    <input type="radio" id="question10_yes" name="question10" value="yes">
+                                    <label for="question10_yes">نعم</label>
+                                    <input type="radio" id="question10_no" name="question10" value="no">
+                                    <label for="question10_no">لا</label>
+                                </div>
+                                </div>
+                                </div>
+
+                            <!-- Diagnosis result box wrapper -->
+                              <div class="diagnosis-result-box" id="diagnosis-result" style="display:block;">
+                                <p id="result"></p>
+                              </div>
+                         
+          </form>
+  <div class="chat-buttons">
+    <!-- Start Chat Button (initially hidden) -->
+    <button type="button" id="start-chat" class="btn btn-primary">ابدأ الدردشة</button>
+    <!-- Hidden Text Field for Chat (initially hidden) -->
+    <div id="chat-input" style="display:none;">
+      <input type="text" id="chat-message" class="form-control" placeholder="أكتب رسالتك هنا...">
+     
+    </div>
+    <!-- Submit Button for Diagnosis Form -->
+    <button type="button" id="submit" class="btn btn-warning">إرسال</button>
+    <button type="button" id="send-message" class="btn btn-warning">إرسال</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    function clearChat() {
+        window.location.reload();
+      }
+    let intents = [];
+    async function fetchIntents() {
+    try {
+        const response = await fetch('/api/intents');
+        if (!response.ok) {
+            throw new Error('Network response was not ok.');
+        }
+        intents = await response.json(); // This correctly sets intents to the entire object
+        console.log('Intents loaded', intents);
+    } catch (error) {
+        console.error('Error fetching intents:', error);
+    }
+}
+    fetchIntents();
+    document.getElementById("send-message").style.display = "none"; // Hide the "" button
+    document.getElementById('submit').addEventListener('click', function() {
+
+      //document.getElementById('send-message').addEventListener('click', function() {
+    // Get the total number of answered questions
+    const totalQuestions = document.querySelectorAll('#diagnosis-form input[type="radio"]').length / 2;
+    const totalAnswered = document.querySelectorAll('#diagnosis-form input[type="radio"]:checked').length;
+    
+    let diagnosisResult;
+
+    if (totalAnswered !== totalQuestions) {
+        diagnosisResult = "الرجاء الإجابة على جميع الأسئلة";
+    } else {
+        // Calculate the number of "yes" answers
+        const yesCount = Array.from(document.querySelectorAll('#diagnosis-form input[type="radio"]:checked'))
+                              .filter(input => input.value === 'yes').length;
+            switch(yesCount) {
+                case 10:
+                    diagnosisResult = "الطفل سليم";
+                    break;
+                case 9:
+                    diagnosisResult = "تصرفات طبيعية";
+                    break;
+                case 8:
+                    diagnosisResult = "تصرفات طبيعية لا داعي للقلق";
+                    break;
+                case 7:
+                    diagnosisResult = "حالة توحد خفيفة وينصح بدمج الطفل مع أطفال آخرين";
+                    break;
+                case 6:
+                    diagnosisResult = "حالة توحد خفيفة ويفضل مراقبة الطفل";
+                    break;
+                case 5:
+                    diagnosisResult = "حالة توحد متوسطة تستدعي مراقبة الطفل";
+                    break;
+                case 4:
+                    diagnosisResult = "حالة توحد متوسطة وعند تكرار التصرفات ينصح بزيارة المختص";
+                    break;
+                case 3:
+                case 2:
+                    diagnosisResult = "حالة توحد متقدمة وينصح بزيارة المختص";
+                    break;
+                case 1:
+                case 0:
+                    diagnosisResult = "حالة توحد متقدمة وتحتاج إلى استشارة طبية عاجلة";
+                    break;
+                default:
+                    diagnosisResult = "An unexpected error occurred.";
+                    break;
+            }
+          }
+
+          // Display the diagnosis result
+    document.getElementById('diagnosis-result').style.display = 'block';
+    document.getElementById('result').textContent = diagnosisResult;
+   
+});
+
+function displayChatMessage(message, sender) {
+    const chatBox = document.getElementById('chatbox'); // Container where messages should be displayed
+    if (chatBox) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('text-left'); // Add class for left-aligned text
+        messageDiv.classList.add('botText'); // Add class for bot messages
+        messageDiv.textContent = message;
+
+        chatBox.appendChild(messageDiv); // Append the new message div to the chatbox
+        chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom of the chatbox to show latest message
+    } else {
+        console.error('Chatbox container not found');
+    }
+}
+
+fetchIntents();
+
+// Refresh page function.
+function refreshPage() {
+    window.location.reload();
+}
+document.getElementById('refreshPageBtn').addEventListener('click', refreshPage);
+
+
+
+function findAndDisplayResponse(message) {
+    // Map to store patterns and their associated responses
+    const patternResponseMap = new Map();
+
+    // Iterate over each intent
+    for (let intent of intents.intents) {
+        // Iterate over each pattern in the intent
+        for (let pattern of intent.patterns) {
+            // Check if the pattern is found in the message
+            if (message.toLowerCase().includes(pattern.toLowerCase())) {
+                // Store the pattern and its response in the map
+                patternResponseMap.set(pattern.toLowerCase(), intent.responses[0]);
+            }
+        }
+    }
+
+    // Display the response for the first matched pattern, if any
+    if (patternResponseMap.size > 0) {
+        const firstPattern = patternResponseMap.keys().next().value;
+        displayChatMessage(patternResponseMap.get(firstPattern), 'bot');
+    } else {
+        // If no matching intents were found, display a default message
+        displayChatMessage("آسف لم أستطيع فهمك, هل يمكنك التوضيح أكثر؟", 'bot');
+    }
+}
+
+
+
+
+
+
+
+
+
+
+document.getElementById('start-chat').addEventListener('click', function() {
+document.getElementById("submit").style.display = "none"; // Hide the "submit" button
+document.getElementById("send-message").style.display = "block"; 
+document.getElementById('diagnosis-result').style.display = 'none';
+
+    // Clear the chatbox
+    document.getElementById('chatbox').innerHTML = '';
+
+    // Hide the "ابدأ الدردشة" button
+    document.getElementById('start-chat').style.display = 'none';
+
+    // Hide the diagnosis result if it's currently displayed
+    // document.getElementById('diagnosis-result').style.display = 'none';
+    
+    // Fetch intents
+    fetchIntents();
+
+    // Show the chat input interface
+    document.getElementById('chat-input').style.display = 'block';
+
+    // Focus on the chat input
+    document.getElementById('chat-message').focus();
+
+    // Start chat with intents
+    document.getElementById('send-message').addEventListener('click', function() {
+        const message = document.getElementById('chat-message').value.trim();
+        if (!message) return; // Do not proceed if message is empty
+        displayChatMessage(message, 'user'); // Display the user's message in chat
+        findAndDisplayResponse(message); // Find and display bot's response
+        document.getElementById('chat-message').value = ''; // Clear the message input field after sending
+    });
+});
+
+});
+</script>
+</body>
+</html>
