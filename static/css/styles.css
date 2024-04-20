@@ -1,0 +1,232 @@
+body { background-color: #f5f5f5; }
+        .chat-container { 
+            max-width: 600px; 
+            margin: 20px auto;
+            margin-top: 50px; 
+            border: 1px solid #ccc;
+            background-color: #fafafa; 
+            padding: 15px; 
+            border-radius: 15px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow-y: auto;
+        }
+        .chat-message { 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            border-radius: 20px; 
+        }
+        .question, .bot-message { 
+            background-color: #dddddd; 
+            color: #333; 
+            text-align: left; 
+            margin-right: 50px;
+        }
+        .answer { 
+            background-color: #eeeeee; 
+            text-align: right; 
+            margin-left: 50px;
+        }
+        .bot-message {
+            background-color: #f0f0f0; 
+            text-align: center; 
+            margin: 5px 50px 10px 50px; /* تمييز رسائل البوت */
+        }
+        .alert-danger, .alert-success { 
+            max-width: 600px; 
+            margin: 20px auto; 
+        }
+        form { 
+            max-width: 600px; 
+            margin: 20px auto; 
+            display: flex;
+        }
+        input[type="text"] { 
+            flex-grow: 1; 
+            margin-right: 10px; 
+            margin-bottom: 10px; 
+        }
+        button { 
+            white-space: nowrap; 
+        }
+        .welcome-message { 
+            text-align: center; 
+            margin-top: 50px;
+            font-size: 24px; 
+            font-weight: bold; 
+        }
+        .instruction { 
+            text-align: center; 
+            margin-top: 10px; 
+            font-size: 16px; }
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: #f2f2f2;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.article-image {
+    width:100%; /* تحديد عرض الصورة بنسبة مئوية من العرض الكامل للعنصر الأب */
+    max-width: 300px; /* تحديد أقصى عرض للصورة */
+    height: auto; /* السماح بتغيير الارتفاع تلقائيًا استنادًا إلى النسبة المئوية للعرض */
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.w3-panel {
+    background-color: #f3f7f8;
+    padding: 16px;
+}
+
+.w3-card {
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(3, 72, 7, 0.1);
+    text-align: center;
+}
+
+.w3-card {
+    margin-bottom: 10px;
+}
+
+.w3-card:hover {
+    box-shadow: 0 8px 16px rgba(237, 41, 218, 0.2);
+}
+.button {
+    font-size: 12px; 
+    width: 100px; 
+    background-color: white;
+    border: 1px solid #060606;
+    color: black;
+    padding: 10px; 
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #a7abab;
+}
+
+.button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px; /* Adjusted right position */
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 15px; /* Adjusted padding */
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust height as needed */
+}
+
+.locations-container {
+    text-align: center;
+    margin-top: 50px; /* Add space between image and locations */
+}
+
+footer {
+    background-color: #f3f7f8;
+    color: #0b0b0b;
+    text-align: center;
+    padding: 0px;
+}
